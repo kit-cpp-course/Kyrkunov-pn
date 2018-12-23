@@ -8,4 +8,10 @@ https://opencv.org/opencv-4-0-0.html
 
 https://github.com/tronkko/dirent
 
+Формат аргументов командной строки: 
+
+.exe **путь** **цвет**
+
+Где путь - это путь к директории с изображениями, цвет - один из основых цветов RGB (black, white, grey, red, orange, yellow, green, aqua, blue, purple)
+
 **Выполнил Кыркунов Павел 23536/4**
