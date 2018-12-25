@@ -18,7 +18,7 @@ CmdArgs* CmdArgs::getInstance()
 int CmdArgs::argParser(int argc, char* argv[], std::string &path, std::string &color)
 {
 	std::vector<std::string> colors = { "black", "white", "grey", "red", "orange", "yellow", "green", "aqua", "blue", "purple" };
-	if (argc < 3)
+	if (argc < 3 || argc > 3)
 	{
 		std::cout << "Enter two parameters : path and color" << std::endl;
 		return 0;
