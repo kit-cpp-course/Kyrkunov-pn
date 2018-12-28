@@ -1,24 +1,12 @@
 #include "CmdArgs.h"
 #include "Immage.h"
+#include "NumColTransformation.h"
 
-CmdArgs::CmdArgs() {};
-
-CmdArgs* CmdArgs::instance = 0;
-
-CmdArgs* CmdArgs::getInstance()
-{
-	if (instance == 0)
-	{
-		instance = new CmdArgs();
-	}
-
-	return instance;
-}
 
 int CmdArgs::argParser(int argc, char* argv[], std::string &path, std::string &color)
 {
 	std::vector<std::string> colors = { "black", "white", "grey", "red", "orange", "yellow", "green", "aqua", "blue", "purple" };
-	if (argc < 3 || argc > 3)
+	if (argc < 3)
 	{
 		std::cout << "Enter two parameters : path and color" << std::endl;
 		return 0;
@@ -33,6 +21,11 @@ int CmdArgs::argParser(int argc, char* argv[], std::string &path, std::string &c
 	{
 		color = argv[1];
 		path = argv[2];
+	}
+
+	if (color[0] == '#' && color.size() == 7)
+	{
+		return 2;
 	}
 
 	std::transform(color.begin(), color.end(), color.begin(), tolower);
