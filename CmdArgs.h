@@ -6,15 +6,18 @@
 class CmdArgs
 {
 private:
-	/* здесь хранитс€ экземпл€р */
-	static CmdArgs* instance;
-
-	/* private конструктор дл€ предотвращени€ создани€ нескольких экземпл€ров */
-	CmdArgs();
+	
+	CmdArgs() = default;
 
 public:
+
 	/* —татичный метод, дл€ создани€ единственного экземпл€ра класса */
-	static CmdArgs* getInstance();
+	static CmdArgs &getInstance() 
+	{
+		static CmdArgs inst;
+		return inst;
+	}
+
 	/* ѕарсер аргументов командной строки, также определ€ет корректность ввода цвета
 	 * @param1 кол-во параметров командной строки
 	 * @param2 параметры командной строки
