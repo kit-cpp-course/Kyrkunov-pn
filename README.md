@@ -12,6 +12,6 @@ https://github.com/tronkko/dirent
 
 .exe **путь** **цвет**
 
-Где путь - это путь к директории с изображениями, цвет - один из основых цветов RGB (black, white, grey, red, orange, yellow, green, aqua, blue, purple)
+Где путь - это путь к директории с изображениями, цвет - один из основых цветов RGB (black, white, grey, red, orange, yellow, green, aqua, blue, purple) или шестнадцатиричное значение цвета, например, #FFFFFF
 
 **Выполнил Кыркунов Павел 23536/4**
