@@ -5,20 +5,19 @@ class HexImmage
 private:
 	std::map<std::string, int> hexColorCount;
 	/*
-	* Название изображения
+	* РќР°Р·РІР°РЅРёРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ
 	*/
 	std::string im_name;
 	/*
-	* Путь к изображению
+	* РџСѓС‚СЊ Рє РёР·РѕР±СЂР°Р¶РµРЅРёСЋ
 	*/
 	std::string im_path;
 	/*
-	* Доминирующий цвет в изображении
+	* Р”РѕРјРёРЅРёСЂСѓСЋС‰РёР№ С†РІРµС‚ РІ РёР·РѕР±СЂР°Р¶РµРЅРёРё
 	*/
 	std::string dominateColor;
 	
 public:
 	HexImmage();
-	//~HexImmage();
 };
 
